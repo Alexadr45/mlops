@@ -44,12 +44,12 @@ stages:
       size: 4111
     - path: model_preparation.py
       hash: md5
-      md5: 7772301a5f6520daf4b3f95721af8367
-      size: 706
+      md5: bb9ef6747f5496d541c5f7255d428ff5
+      size: 816
     outs:
     - path: models/model.pkl
       hash: md5
-      md5: d05b62e90b1e1545fe6d57a0f87eeb60
+      md5: 82e8b7f69ad1312bfa791051b60efc48
       size: 36501
   data_testing:
     cmd: python3 model_testing.py
