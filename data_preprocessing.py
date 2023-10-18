@@ -1,8 +1,8 @@
 import pandas as pd
 
 
-df_train = pd.read_csv('train/X_train.csv', index_col=0)
-df_test = pd.read_csv('test/X_test.csv', index_col=0)
+df_train = pd.read_csv('data/train/X_train.csv', index_col=0)
+df_test = pd.read_csv('data/test/X_test.csv', index_col=0)
 #Объединяем датафреймы
 df_total = pd.concat([df_train, df_test])
 
@@ -29,5 +29,5 @@ X_test = df_total.iloc[df_train.shape[0]:,:]
 
 
 #Сохранение файлов
-X_train.to_csv('train/X_train.csv', index=False)
-X_test.to_csv('test/X_test.csv', index=False)
+X_train.to_csv('data/train/X_train.csv', index=False)
+X_test.to_csv('data/test/X_test.csv', index=False)
