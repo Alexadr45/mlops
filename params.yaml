@@ -2,5 +2,5 @@ split:
   split_ratio: 0.3
   seed: 42
 train:
-  C: 8.75
-  penalty: "l1"
+  C: 8
+  penalty: "l2"

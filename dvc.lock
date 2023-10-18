@@ -46,11 +46,15 @@ stages:
       hash: md5
       md5: bb9ef6747f5496d541c5f7255d428ff5
       size: 816
+    params:
+      params.yaml:
+        train.C: 8
+        train.penalty: l2
     outs:
     - path: models/model.pkl
       hash: md5
-      md5: 82e8b7f69ad1312bfa791051b60efc48
-      size: 36501
+      md5: 31c19a739f9186e58c227c1365b9ab45
+      size: 36494
   data_testing:
     cmd: python3 model_testing.py
     deps:
@@ -64,8 +68,8 @@ stages:
       size: 1771
     - path: model_testing.py
       hash: md5
-      md5: a9ecd5d28214ebc4dd99697e004b9fc3
-      size: 418
+      md5: 0adaaa9127f5ec60e4f6556e22fdd5c8
+      size: 425
     outs:
     - path: evaluate/score.json
       hash: md5

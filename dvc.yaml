@@ -18,6 +18,9 @@ stages:
     - data/train/X_train.csv
     - data/train/Y_train.csv
     - model_preparation.py
+    params:
+    - train.C
+    - train.penalty
     outs:
     - models/model.pkl
   data_testing:
